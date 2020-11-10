@@ -1,0 +1,268 @@
+/*CSS reset*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*html styling*/
+html{
+    scroll-behavior: smooth;
+}
+
+/*font import*/
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&family=Xanh+Mono:ital@1&display=swap');
+
+/*desing navigation bar*/
+.navbar{
+    padding: 5px;
+    display:flex;
+    justify-content: left;
+    background-color: #14274e;
+    box-shadow: 0px 2px 2px 1px #14274e;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.navlist{
+    width: 50%;
+    display: flex;
+}
+.navlist li{
+    list-style: none;
+    padding: 5px 20px;
+    margin: 2px 0px 3px;
+    font-size: 25px;
+    
+}
+.navitem a{
+    color: #f1f6f9;
+    text-decoration: none;
+    font-family: 'Staatliches';
+    border-bottom: none;
+}
+.navitem::after{
+    content: '';
+    display: flex;
+    width: 0;
+    height: 2px;
+    background: #f1f6f9;
+    transition: width .5s ease-out;
+}
+.navitem:hover::after {
+    width: 100%;
+}
+
+/*search bar design*/
+.search{
+    width: 50%;
+    justify-content: flex-end;
+    display: flex;
+    margin: 0.25em;
+    padding: 0.15em;
+}
+
+.search>input{
+    margin-right: 4px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: #f1f6f9;
+    padding: 2px 6px;
+    font-family: 'Staatliches';
+    font-size: 15px;
+}
+.search>input:focus{
+    box-shadow: 0 0 2px 1px#f1f6f9;
+
+}
+
+.search button{
+    font-family: 'Staatliches';
+    font-size: 17px;
+    color:#f1f6f9;
+    background-color: transparent;
+    outline: none;  
+    border: none;
+    margin-left: 5px;
+    padding: 5px;
+    border: 2px solid #f1f6f9;
+    border-radius: 8px;
+}
+.search button:hover{
+    color: #1a1a2e;
+    background-color: #f1f6f9;
+    box-shadow: 0px 0px 3px #f1f6f9;
+    transition: all .8s ease; 
+}
+
+/*burger menu*/
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    top:8px;
+    right: 1em;
+}
+.line{
+    width: 30px;
+    background-color: #f1f6f9;
+    height: 3px;
+    margin: 4px 2px;
+}
+
+/*Designing the section-1*/
+/*section-1 backgroud*/
+.background{
+    background: #1a1a2e69 url("/images/bg.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*box class*/
+.box{
+    color:#f1f6f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35rem;
+    width: 100%;
+}
+
+/*container class*/
+.container{
+    margin-left: 20em;
+}
+
+/*heading class*/
+.heading{
+    border-bottom: 2px solid #6b778d;
+    margin: 0.30em 0;
+    font-size: 35px;
+    font-family: 'Xanh Mono', monospace;
+    z-index: 0;
+}
+
+/*paragraph class*/
+.para{
+    font-family: 'Xanh Mono', monospace;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    margin: 2px 5px;
+    max-width: 40em;
+}
+
+/*Designing section-2*/
+#section-2{
+    height: 50rem;
+}
+
+/*section-2 background*/
+.bg{
+    color: #f1f6f9;
+    background-color: #14274e;
+}
+
+/*alinging left*/
+.left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*aligning right*/
+.right{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/*content class*/
+.content{
+    margin: 50px 18px;
+    width: 50em;
+}
+
+#section-2>div>img{
+    margin: 20px 0;
+    padding: 0 6px;
+    height: 187px;
+    width: 187px;
+}
+
+/*Contact styling*/
+#contact{
+    background: url(/images/contactbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#contact-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-box input,
+#contact-box textarea{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+    border: 2px solid #f1f6f9;
+    color: #f1f6f9;
+    border-radius: 15px;
+    font-family: 'Xanh Mono', monospace;
+    resize: none;
+
+}
+
+form input::placeholder,
+textarea::placeholder{
+    color: #f1f6f9;
+    font-size: 18px;
+}
+
+/*button styling*/
+.btn{
+    padding: 5px 10px;
+    margin: 2px;
+    color: #f1f6f9;
+    outline: none;
+    background-color: transparent;
+    border: 2px solid #f1f6f9;
+    font-size: 13px;
+    border-radius: 10px;
+    cursor: pointer
+}
+.btn:hover{
+    color: #14274e;
+    background-color: #f1f6f9;
+}
+
+/*autofill styling*/
+input:-webkit-autofill,
+textarea:-webkit-autofill{
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+
+#contact-box form{
+    width: 33em;
+}
+
+/*footer*/
+footer{
+    background-color: #14274e;
+    color: white;
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Xanh Mono', monospace;
+}

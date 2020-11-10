@@ -1,0 +1,121 @@
+/*css reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*navbar*/
+.navbar{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 12em;
+    transition: height 400ms ease-out;
+}
+
+.h-nav-resp{
+    height: 2em;
+}
+.navlist{
+    width: 20em;
+    flex-direction: column;
+    align-self: center;
+}
+.navlist li{
+    list-style: none;
+    padding: 5px 3px;
+    margin: 2px auto;
+    font-size: 10px;
+}
+
+/*search bar*/
+.search{
+    width: 8em;
+    flex-direction: column;
+}
+
+.search>input{
+    padding: 0;
+    width: 9em;
+    margin-bottom: 4px;
+}
+.search button{
+    font-size: 10px;
+}
+.search input::placeholder{
+    font-size: 15px;
+    padding: 8px;
+}
+
+/*Burger*/
+.burger{
+    display: block;
+}
+
+/*navbar visibility*/
+.v-nav-resp{
+    visibility: hidden;
+    transition: visibility 50ms ease-in;
+}
+
+/*section-1*/
+.box{
+    height: 20rem;
+}
+
+/*heading*/
+.heading{
+    align-self: center;
+    font-size: 15px;
+}
+
+/*container*/
+.container{
+    margin-left: 10em;
+}
+
+/*paragraphs*/
+.para{
+    font-size: 8px;
+}
+
+/*content*/
+.content{
+    max-width: 20em;
+}
+
+/*section-2*/
+#section-2{
+    height: 33rem;
+}
+
+#section-2>div>img{
+    margin: 5px 0;
+    padding: 0 6px;
+    height: 7rem;
+    width: 7rem;
+}
+
+/*contact*/
+#contact-box{
+    max-width: 10em;
+    justify-content: center;
+    align-items: center;
+}
+#contact-box form{
+    width: inherit;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 18em;
+    margin: 5px;
+    padding: 8px 5px;
+    font-size: 10px;
+}
+
+form input::placeholder,
+textarea::placeholder{
+    color: #f1f6f9;
+    font-size: 15px;
+}
