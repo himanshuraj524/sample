@@ -113,7 +113,7 @@ html{
 /*Designing the section-1*/
 /*section-1 backgroud*/
 .background{
-    background: #1a1a2e69 url("images/bg.jpg") ;
+    background: #1a1a2e69 url("../images/bg.jpg") ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -194,7 +194,7 @@ html{
 
 /*Contact styling*/
 #contact{
-    background: url(images/contactbg.jpg);
+    background: url(../images/contactbg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
