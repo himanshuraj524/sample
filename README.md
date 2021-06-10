@@ -1,3 +1,3 @@
 # sample
 "This is the sample website"
-[click here](home.html)
+[click here](https://himanshuraj524.github.io/sample/)
